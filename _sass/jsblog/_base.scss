@@ -186,6 +186,7 @@ code {
 }
 
 code {
+  border: 0;
   padding: 1px 5px;
 }
 
@@ -197,7 +198,7 @@ pre {
   border-radius: 5;
 
   > code {
-    border: 0;
+    // border: 0;
     padding-right: 0;
     padding-left: 0;
   }
