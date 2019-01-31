@@ -1,16 +1,6 @@
 /**
  * Reset some basic elements
  */
- :root {
-   --text-color: #333333;
-   --light-text-color: #ffffff;
-   --background-color: #ffffff;
-   --footer-background-color: #f2f2f2;
-   --grey-color-light: lighten($grey-color, 40%);
-   --grey-color-lighter: lighten($grey-color, 45%);
-   --grey-color-dark: darken($grey-color, 25%);
- }
-
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
