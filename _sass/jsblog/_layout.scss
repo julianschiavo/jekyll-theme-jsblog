@@ -2,11 +2,11 @@
  * Site header
  */
 .site-header {
-  height: 55px;
-  line-height: 44px;
+  height: 60px;
+  line-height: 60px;
   // background: $dark-background-color;
   // background: rgba(0, 0, 0, 0.8);
-  background-image: linear-gradient(to right, #ffff00, red);
+  background-image: linear-gradient(to right, #ffff00, #ffff00, red);
 
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -23,7 +23,7 @@
 
 .site-title {
   color: $light-text-color !important;
-  font-size: 25px;
+  font-size: 28px;
   font-weight: $heavy-font-weight;
   letter-spacing: -1px;
   margin-bottom: 0;
