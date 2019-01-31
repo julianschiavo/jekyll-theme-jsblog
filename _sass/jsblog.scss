@@ -3,24 +3,47 @@ $base-font-family: -apple-system-font, BlinkMacSystemFont, "San Francisco", "Hel
 
 $monospace-font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !default;
 
-$base-font-size:    17px !default;
-$base-font-weight:  400 !default;
-$heavy-font-weight: 600 !default;
+// Font Sizes
+$title-large-font-size: 1px !default;
+$title-font-size: 42px !default;
+$title-medium-font-size: 32px !default;
+$title-small-font-size: 27px !default;
+
+$subtitle-font-size: 24px !default;
+$subtitle-small-font-size: 22px !default;
+
+$meta-font-size: 21px !default;
+$meta-small-font-size: 19px !default;
+
+$lead-font-size: 20px !default;
+$lead-small-font-size: 18px !default;
+
+$base-font-size: 17px !default;
+$caption-font-size: 17px !default;
+$blockquote-font-size: 18px !default;
 $small-font-size:   $base-font-size * 0.875 !default;
 $nav-font-size:     16px !default;
-$base-line-height:  1.5 !default;
 
-$spacing-unit:      15px !default;
+// Font Variables
+$base-font-weight: 400 !default;
+$heavy-font-weight: 600 !default;
+$base-line-height: 1.5 !default;
+
+// Spacing/Padding
+$spacing-unit: 15px !default;
 $page-content-padding: 80px !default;
 
+// Colors
 $grey-color:        #828282 !default;
 $brand-color:       #2568ba !default;
 $a-color:           #0070c9 !default;
 $a-hover-opacity:   .65 !default;
 
-$header-background-color: #191900 !default;
-$header-text-color: #ffffff !default;
-$header-text-color-visited: darken(#828282, 25%); // --grey-color-dark in light mode
+$site-header-background-color: #191900 !default;
+$site-header-text-color: #ffffff !default;
+$site-header-text-color-visited: darken(#828282, 25%); // --grey-color-dark in light mode
+$site-title-font-size: 30px !default;
+$site-footer-font-size: 15px !default;
 
 // Width of the content area
 $content-width:     980px !default;

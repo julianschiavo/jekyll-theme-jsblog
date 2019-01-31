@@ -21,7 +21,7 @@
 
 .site-title {
   color: $header-text-color !important;
-  font-size: 30px;
+  font-size: $site-title-font-size;
   font-weight: $heavy-font-weight;
   letter-spacing: -1px;
   margin-bottom: 0;
@@ -81,7 +81,7 @@
   height: 20px;
   line-height: 20px;
   padding: 20px 0;
-  font-size: 15px;
+  font-size: $site-footer-font-size;
   color: $grey-color;
   background-color: var(--footer-background-color);
   text-align: center;
@@ -104,10 +104,6 @@
   }
 }
 
-.page-heading {
-  font-size: 22px;
-}
-
 .post-list {
   margin-left: 0;
   list-style: none;
@@ -125,21 +121,8 @@
   }
 }
 
-.post-archives {
-  margin-left: 0;
-  list-style: none;
-
-  .post-link {
-    font-size: 24px;
-  }
-
-  > li {
-    margin-bottom: $spacing-unit;
-  }
-}
-
 .post-meta {
-  font-size: 21px;
+  font-size: $meta-font-size;
   line-height: 1.19048;
   font-weight: 400;
   letter-spacing: .011em;
@@ -148,13 +131,13 @@
   margin-top: .4em;
 
   @include media-query($on-medium) {
-    font-size: 19px;
+    font-size: $meta-small-font-size;
     line-height: 1.21053;
     letter-spacing: .012em;
   }
 
   @include media-query($on-small) {
-    font-size: 19px;
+    font-size: $meta-small-font-size;
     line-height: 1.21053;
     letter-spacing: .012em;
   }
@@ -217,21 +200,21 @@
 }
 
 .post-title {
-  font-size: 40px;
+  font-size: $title-font-size;
   line-height: 1.1;
   font-weight: 600;
   letter-spacing: 0em;
   margin-bottom: 0px;
 
   @include media-query($on-medium) {
-    font-size: 32px;
+    font-size: $title-medium-font-size;
     line-height: 1.125;
     letter-spacing: .004em;
   }
 
 
   @include media-query($on-small) {
-    font-size: 27px;
+    font-size: $title-small-font-size;
     line-height: 1.14815;
     letter-spacing: .008em;
   }
@@ -242,7 +225,7 @@
 
   // First paragraph is the lead
   p:first-of-type {
-    font-size: 20px;
+    font-size: $lead-font-size;
     line-height: 1.5;
     font-weight: 300;
     letter-spacing: .017em;
@@ -251,26 +234,26 @@
   // Headers
 
   h1 {
-    font-size: 32px;
+    font-size: $title-font-size;
     line-height: 1.09375;
     font-weight: 500;
     letter-spacing: .011em;
 
     @include media-query($on-medium) {
-      font-size: 28px;
+      font-size: $title-small-font-size;
       line-height: 1.1073;
       letter-spacing: .012em;
     }
   }
 
   h2 {
-    font-size: 24px;
+    font-size: $subtitle-font-size;
     line-height: 1.20849;
     font-weight: 500;
     letter-spacing: .015em;
 
     @include media-query($on-medium) {
-      font-size: 22px;
+      font-size: $subtitle-small-font-size;
       line-height: 1.22739;
       letter-spacing: .016em;
     }
@@ -278,13 +261,13 @@
 
   // TODO: Revise h3
   h3 {
-    font-size: 20px;
+    font-size: $lead-font-size;
     line-height: 1.15667;
     font-weight: 500;
     letter-spacing: .016em;
 
     @include media-query($on-medium) {
-      font-size: 18px;
+      font-size: $lead-small-font-size;
       line-height: 1.18182;
       letter-spacing: .02em;
     }
