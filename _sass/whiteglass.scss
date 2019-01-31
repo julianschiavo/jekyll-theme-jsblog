@@ -1,26 +1,30 @@
 // Define defaults for each variable.
-$base-font-family: Bitter, "Apple SD Gothic Neo", "Noto Sans", "Source Han Sans", "Noto Sans CJK JP", "Source Han Sans JP", "Noto Sans CJK KR", "Source Han Sans KR", NanumBarunGothic, AppleGothic, "Malgun Gothic", Dotum, sans-serif !default;
+$base-font-family: -apple-system-font, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $monospace-font-family: Monaco, Menlo, Consolas, "Courier New", DotumChe, monospace !default;
-$base-font-size:   16px !default;
+$base-font-size:   17px !default;
 $base-font-weight: 400 !default;
+$heavy-font-weight: 500 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color:       #111 !default;
-$background-color: #fdfdfd !default;
+$text-color:       #333 !default;
+$light-text-color: #fff !default;
+$background-color: #fff !default;
+$dark-background-color: #111 !default;
+$footer-background-color: #f2f2f2 !default;
 $brand-color:      #2568ba !default;
+$a-color: #0070c9 !default;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
 // Width of the content area
-$content-width:    800px !default;
-
-$on-palm:          600px !default;
-$on-laptop:        800px !default;
+$content-width:    980px !default;
+$on-palm:          692px !default;
+$on-laptop:        980px !default;
 
 
 
@@ -41,7 +45,7 @@ $on-laptop:        800px !default;
 
 // Import partials.
 @import
-  "whiteglass/base",
-  "whiteglass/layout",
-  "whiteglass/syntax-highlighting"
+  "apple/base",
+  "apple/layout",
+  "apple/syntax-highlighting"
 ;
