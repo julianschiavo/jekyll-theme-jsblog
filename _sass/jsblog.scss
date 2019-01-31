@@ -26,26 +26,16 @@ $on-laptop:         980px !default;
 $on-medium:         1068px !default;
 $on-small:          735px !default;
 
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-lighter: lighten($grey-color, 45%);
-$grey-color-dark: darken($grey-color, 25%);
-$grey-color-darker: darken($grey-color, 30%);
-
-$dm-grey-color-light: darken($grey-color, 25%);
-$dm-grey-color-lighter: darken($grey-color, 30%);
-$dm-grey-color-dark: lighten($grey-color, 40%);
-$dm-grey-color-darker: lighten($grey-color, 45%);
-
 // Variables that change with dark mode
 :root {
   --text-color: #333333;
   --light-text-color: #ffffff;
   --background-color: #ffffff;
   --footer-background-color: #f2f2f2;
-  --grey-color-light: #{$grey-color-light};
-  --grey-color-lighter: #{$grey-color-lighter};
-  --grey-color-dark: #{$grey-color-dark};
-  --grey-color-darker: #{$grey-color-darker};
+  --grey-color-light: lighten(#828282, 40%); // Use the $grey-color as base
+  --grey-color-lighter: lighten(#828282, 45%); // Use the $grey-color as base
+  --grey-color-dark: darken(#828282, 25%); // Use the $grey-color as base
+  --grey-color-darker: darken(#828282, 30%); // Use the $grey-color as base
 }
 
 @media (prefers-color-scheme: dark) {
@@ -54,10 +44,10 @@ $dm-grey-color-darker: lighten($grey-color, 45%);
     --light-text-color: #000000;
     --background-color: #2C2C2C;
     --footer-background-color: #0D0D0D;
-    --grey-color-light: #{$dm-grey-color-light};
-    --grey-color-lighter: #{$dm-grey-color-lighter};
-    --grey-color-dark: #{$dm-grey-color-dark};
-    --grey-color-darker: #{$dm-grey-color-darker};
+    --grey-color-light: darken(#828282, 25%); // Use the $grey-color as base
+    --grey-color-lighter: darken(#828282, 30%); // Use the $grey-color as base
+    --grey-color-dark: lighten(#828282, 40%); // Use the $grey-color as base
+    --grey-color-darker: lighten(#828282, 45%); // Use the $grey-color as base
   }
 }
 
