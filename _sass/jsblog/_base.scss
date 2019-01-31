@@ -184,7 +184,7 @@ code {
   font-size: 13px;
   border: 1px solid var(--grey-color-light);
   border-radius: 0;
-  background-color: lighten(var(--grey-color-light), 5%);
+  background-color: lighten(#{var(--grey-color-light)}, 5%);
 }
 
 code {

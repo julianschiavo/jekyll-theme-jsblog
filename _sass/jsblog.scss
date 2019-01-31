@@ -12,13 +12,12 @@ $base-line-height:  1.5 !default;
 $spacing-unit:      15px !default;
 $page-content-padding: 80px !default;
 
+$grey-color:        #828282 !default;
 $brand-color:       #2568ba !default;
 $a-color:           #0070c9 !default;
 $a-hover-opacity:   .65 !default;
 
 $dark-background-color: #111 !default;
-
-$grey-color:        #828282 !default;
 
 // Width of the content area
 $content-width:     980px !default;
@@ -40,7 +39,7 @@ $on-small:          735px !default;
 @media (prefers-color-scheme: dark) {
   :root {
     --text-color: #f2f2f2;
-    --dm-light-text-color: #000;
+    --light-text-color: #000;
     --background-color: #2C2C2C;
     --footer-background-color: #0D0D0D;
     --grey-color-light: darken($grey-color, 25%);
