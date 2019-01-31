@@ -33,9 +33,9 @@ $on-small:          735px !default;
   --background-color: #ffffff;
   --footer-background-color: #f2f2f2;
   --grey-color-light: lighten(#828282, 40%); // Use the $grey-color as base
-  --grey-color-lighter: lighten(#828282, 45%); // Use the $grey-color as base
+  --grey-color-lighter: lighten(#828282, 50%); // Use the $grey-color as base
   --grey-color-dark: darken(#828282, 25%); // Use the $grey-color as base
-  --grey-color-darker: darken(#828282, 30%); // Use the $grey-color as base
+  --grey-color-darker: darken(#828282, 35%); // Use the $grey-color as base
 }
 
 @media (prefers-color-scheme: dark) {
@@ -45,9 +45,9 @@ $on-small:          735px !default;
     --background-color: #2C2C2C;
     --footer-background-color: #0D0D0D;
     --grey-color-light: darken(#828282, 25%); // Use the $grey-color as base
-    --grey-color-lighter: darken(#828282, 30%); // Use the $grey-color as base
+    --grey-color-lighter: darken(#828282, 35%); // Use the $grey-color as base
     --grey-color-dark: lighten(#828282, 40%); // Use the $grey-color as base
-    --grey-color-darker: lighten(#828282, 45%); // Use the $grey-color as base
+    --grey-color-darker: lighten(#828282, 50%); // Use the $grey-color as base
   }
 }
 
