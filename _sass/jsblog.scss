@@ -32,9 +32,10 @@ $on-small:          735px !default;
   --light-text-color: #ffffff;
   --background-color: #ffffff;
   --footer-background-color: #f2f2f2;
-  --grey-color-light: lighten($grey-color, 40%);
-  --grey-color-lighter: lighten($grey-color, 45%);
-  --grey-color-dark: darken($grey-color, 25%);
+  --grey-color-light: lighten(#{$grey-color}, 40%);
+  --grey-color-lighter: lighten(#{$grey-color}, 45%);
+  --grey-color-dark: darken(#{$grey-color}, 25%);
+  --grey-color-darker: darken(#{$grey-color}, 30%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -43,9 +44,10 @@ $on-small:          735px !default;
     --light-text-color: #000000;
     --background-color: #2C2C2C;
     --footer-background-color: #0D0D0D;
-    --grey-color-light: darken($grey-color, 25%);
-    --grey-color-lighter: darken($grey-color, 30%);
-    --grey-color-dark: lighten($grey-color, 40%);
+    --grey-color-light: darken(#{$grey-color}, 25%);
+    --grey-color-lighter: darken(#{$grey-color}, 30%);
+    --grey-color-dark: lighten(#{$grey-color}, 40%);
+    --grey-color-darker: lighten(#{$grey-color}, 45%);
   }
 }
 
