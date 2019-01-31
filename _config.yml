@@ -13,11 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.author }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: whiteglass theme
-author: Yous
-description: Minimal, responsive Jekyll theme for hackers.
-baseurl: "/whiteglass" # the subpath of your site, e.g. /blog
-url: "https://yous.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+title: js theme
+author: Julian
+description: Minimal, responsive theme for my blog.
+baseurl: "/jekyll-theme-jsblog" # the subpath of your site, e.g. /blog
+url: "https://justjs.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 lang: en
 timezone: UTC
 exclude:
@@ -27,7 +27,7 @@ exclude:
   - README.md
   - LICENSE.txt
   - CHANGELOG.md
-  - jekyll-whiteglass.gemspec
+  - jekyll-theme-jsblog.gemspec
   - screenshot.png
   - vendor
 
