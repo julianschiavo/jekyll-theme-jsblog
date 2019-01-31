@@ -2,10 +2,11 @@
  * Site header
  */
 .site-header {
-  height: 44px;
+  height: 55px;
   line-height: 44px;
-  background: $dark-background-color;
-  background: rgba(0, 0, 0, 0.8);
+  // background: $dark-background-color;
+  // background: rgba(0, 0, 0, 0.8);
+  background-image: linear-gradient(to right, #ffff00, red);
 
   -webkit-user-select: none;
   -moz-user-select: none;
