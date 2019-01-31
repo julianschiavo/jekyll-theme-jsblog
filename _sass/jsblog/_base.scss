@@ -182,8 +182,6 @@ pre,
 code {
   font-family: $monospace-font-family;
   font-size: 13px;
-  border: 1px solid var(--grey-color-light);
-  border-radius: 0;
   background-color: var(--grey-color-lighter);
 }
 
@@ -195,9 +193,11 @@ pre {
   padding: 8px 12px;
   overflow-x: auto;
   word-wrap: normal;
+  border: 1px solid var(--grey-color-light);
+  border-radius: 5;
 
   > code {
-    // border: 0;
+    border: 0;
     padding-right: 0;
     padding-left: 0;
   }
