@@ -5,7 +5,7 @@
 
 Minimal, responsive theme used on my blog.
 
-![whiteglass theme](screenshot.png)
+![jsblog theme](screenshot.png)
 
 ## Installation
 

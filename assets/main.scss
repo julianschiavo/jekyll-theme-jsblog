@@ -4,32 +4,34 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: Bitter, "Apple SD Gothic Neo", AppleGothic, NanumBarunGothic, "Malgun Gothic", Dotum, sans-serif;
+$base-font-family: -apple-system-font, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $monospace-font-family: Monaco, Menlo, Consolas, "Courier New", DotumChe, monospace;
-$base-font-size:   16px;
+$base-font-size:   17px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
+// Colours
 $text-color:       #111;
+$light-text-color: #fff;
 $background-color: #fdfdfd;
+$dark-background-color: #111;
+$footer-background-color: #f2f2f2;
 $brand-color:      #2568ba;
+$a-color: #0070c9;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    980px;
+$on-palm:          692px;
+$on-laptop:        980px;
 
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// whiteglass also includes a mixin for defining media queries.
+// This theme also includes a mixin for defining media queries.
 // Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {
@@ -45,5 +47,5 @@ $on-laptop:        800px;
 
 
 
-// Import partials from the `whiteglass` theme.
-@import "whiteglass";
+// Import partials from this theme.
+@import "jsblog";
