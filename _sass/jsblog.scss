@@ -5,7 +5,7 @@ $monospace-font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Co
 
 $base-font-size:    17px !default;
 $base-font-weight:  400 !default;
-$heavy-font-weight: 500 !default;
+$heavy-font-weight: 600 !default;
 $small-font-size:   $base-font-size * 0.875 !default;
 $nav-font-size:     16px !default;
 $base-line-height:  1.5 !default;
@@ -17,8 +17,7 @@ $grey-color:        #828282 !default;
 $brand-color:       #2568ba !default;
 $a-color:           #0070c9 !default;
 $a-hover-opacity:   .65 !default;
-
-$dark-background-color: #111 !default;
+$header-background-color: #191100 !default;
 
 // Width of the content area
 $content-width:     980px !default;
@@ -44,7 +43,7 @@ $on-small:          735px !default;
     --text-color: #f2f2f2;
     --light-text-color: #000000;
     --background-color: #2C2C2C;
-    --footer-background-color: #0D0D0D;
+    --footer-background-color: #565656;
     --grey-color-light: darken(#828282, 25%); // Use the $grey-color as base
     --grey-color-lighter: darken(#828282, 35%); // Use the $grey-color as base
     --grey-color-dark: lighten(#828282, 40%); // Use the $grey-color as base

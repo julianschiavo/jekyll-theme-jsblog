@@ -4,9 +4,7 @@
 .site-header {
   height: 60px;
   line-height: 60px;
-  // background: $dark-background-color;
-  // background: rgba(0, 0, 0, 0.8);
-  background-image: linear-gradient(to right, gray, gray, gray, black);
+  background: $header-background-color;
 
   -webkit-user-select: none;
   -moz-user-select: none;
