@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-jsblog"
-  spec.version       = "1.7.1"
+  spec.version       = "1.0.0"
   spec.authors       = ["Julian Schiavo"]
   spec.email         = ["justdotjs@icloud.com"]
 
@@ -15,7 +15,6 @@ Gem::Specification.new do |spec|
   end
 
   spec.add_runtime_dependency "jekyll", "~> 3.3"
-  spec.add_runtime_dependency "jekyll-archives", "~> 2.1"
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.0"
 
