@@ -17,7 +17,10 @@ $grey-color:        #828282 !default;
 $brand-color:       #2568ba !default;
 $a-color:           #0070c9 !default;
 $a-hover-opacity:   .65 !default;
-$header-background-color: #191100 !default;
+
+$header-background-color: #191900 !default;
+$header-text-color: #333333 !default;
+$header-text-color-visited: darken(#828282, 25%); // Use the $grey-color as base
 
 // Width of the content area
 $content-width:     980px !default;
@@ -29,7 +32,7 @@ $on-small:          735px !default;
 // Variables that change with dark mode
 :root {
   --text-color: #333333;
-  --light-text-color: #ffffff;
+  --dim-text-color: #ffffff;
   --background-color: #ffffff;
   --footer-background-color: #f2f2f2;
   --grey-color-light: lighten(#828282, 40%); // Use the $grey-color as base
@@ -41,9 +44,9 @@ $on-small:          735px !default;
 @media (prefers-color-scheme: dark) {
   :root {
     --text-color: #f2f2f2;
-    --light-text-color: #000000;
+    --dim-text-color: #000000;
     --background-color: #2C2C2C;
-    --footer-background-color: #565656;
+    --footer-background-color: #2c2c2c;
     --grey-color-light: darken(#828282, 25%); // Use the $grey-color as base
     --grey-color-lighter: darken(#828282, 35%); // Use the $grey-color as base
     --grey-color-dark: lighten(#828282, 40%); // Use the $grey-color as base
