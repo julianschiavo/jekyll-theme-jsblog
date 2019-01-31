@@ -5,19 +5,25 @@
 
 // Our variables
 $base-font-family: -apple-system-font, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$monospace-font-family: Monaco, Menlo, Consolas, "Courier New", DotumChe, monospace;
-$base-font-size:   17px;
+$monospace-font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !default;
+$base-font-size: 17px;
+$nav-font-size: 16px;
 $base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
+$heavy-font-weight: 500;
+$small-font-size: $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
+// Link Colours
+$a-color: #0070c9;
+$a-hover-opacity: .65;
+
 // Colours
-$text-color:       #111;
+$text-color: #333;
 $light-text-color: #fff;
-$background-color: #fdfdfd;
-$dark-background-color: #111;
+$background-color: #fff;
+$dark-background-color: #333;
 $footer-background-color: #f2f2f2;
 $brand-color:      #2568ba;
 $a-color: #0070c9;

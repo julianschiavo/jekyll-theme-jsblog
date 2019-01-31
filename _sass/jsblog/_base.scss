@@ -13,6 +13,11 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
@@ -23,6 +28,8 @@ body {
        -o-font-feature-settings: "kern" 1;
           font-feature-settings: "kern" 1;
   font-kerning: normal;
+  letter-spacing: -.022em;
+  margin-bottom: 60px;
   word-wrap: break-word;
 }
 
@@ -42,6 +49,10 @@ ul, ol, dl, figure,
   margin-bottom: $spacing-unit / 2;
 }
 
+p+h1, ul+h1, ol+h1, p+h2, ul+h2, ol+h2, p+h3, ul+h3, ol+h3, p+h4, ul+h4, ol+h4, p+h5, ul+h5, ol+h5, p+h6, ul+h6, ol+h6 {
+  margin-top: 1.4em;
+}
+
 
 
 /**
@@ -57,21 +68,35 @@ img {
 /**
  * Figures
  */
+figure {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 figure > img {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-sizing: border-box;
   display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
 }
-
 figcaption {
-  font-size: $small-font-size;
+  font-size: 17px;
+  line-height: 1.52947;
+  font-weight: 600;
+  letter-spacing: -.021em;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: left
 }
-
-
 
 /**
  * Lists
  */
 ul, ol {
-  margin-left: $spacing-unit;
+  margin-left: 1.17647em;
 }
 
 li {
@@ -114,7 +139,7 @@ a {
 
   &:hover {
     color: $text-color;
-    text-decoration: underline;
+    opacity: $a-hover-opacity;
   }
 }
 
@@ -142,10 +167,10 @@ blockquote {
  * Rules
  */
 hr {
-  height: 4px;
-  margin: $spacing-unit / 2 0;
   border: 0;
-  background-color: $grey-color-light;
+  height: 1px;
+  background: #d6d6d6;
+  margin: 65px 0
 }
 
 
@@ -184,19 +209,17 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  width: $content-width;
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
   @extend %clearfix;
 
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+  @include media-query($on-medium) {
+    width: 692px;
+  }
+
+  @include media-query($on-small) {
+    width: 87.5%;
   }
 }
 

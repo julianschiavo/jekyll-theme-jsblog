@@ -6,7 +6,16 @@ author: "Bart Simpson"
 meta: "Springfield"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
+This paragraph is a lead paragraph! It's typography is automatically changed to add more emphasis on whatever you chose to use this for. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu.
+
+<!-- more -->
+
+## Using figures!
+
+<figure>
+  <figcaption>Some beautiful caption.</figcaption>
+  <img src="http://random.cat//i//Gcxai.jpg" alt="an amazing alt text" width="600px"/>
+</figure>
 
 ## Some great heading (h2)
 
