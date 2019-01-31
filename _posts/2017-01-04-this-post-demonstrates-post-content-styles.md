@@ -14,7 +14,7 @@ This paragraph is a lead paragraph! It's typography is automatically changed to 
 
 <figure>
   <figcaption>Some beautiful caption.</figcaption>
-  <img src="http://random.cat//i//Gcxai.jpg" alt="an amazing alt text" width="600px"/>
+  <img src="https://purr.objects-us-east-1.dream.io/i/party.jpg" alt="an amazing alt text" width="600px"/>
 </figure>
 
 ## Some great heading (h2)
