@@ -2,9 +2,10 @@
  * Site header
  */
 .site-header {
-  height: 60px;
-  line-height: 60px;
-  background: $site-header-background-color;
+  height: 65px;
+  line-height: 65px;
+  background-image: linear-gradient($site-header-background-color, var(--background-color));
+  // background-image: // $site-header-background-color;
 
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -75,7 +76,6 @@
  * Site footer
  */
 .site-footer {
-  margin-top: 100px !important;
   position: absolute;
   bottom: 0;
   width: 100%;
