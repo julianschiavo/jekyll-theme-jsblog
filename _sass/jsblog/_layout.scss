@@ -20,7 +20,7 @@
 }
 
 .site-title {
-  color: $header-text-color !important;
+  color: $site-header-text-color !important;
   font-size: $site-title-font-size;
   font-weight: $heavy-font-weight;
   letter-spacing: -1px;
@@ -29,7 +29,7 @@
 
   &,
   &:visited {
-    color: $header-text-color-visited;
+    color: $site-header-text-color-visited;
   }
 
   :hover {
@@ -48,7 +48,7 @@
   }
 
   .page-link {
-    color: $header-text-color;
+    color: $site-header-text-color;
     line-height: $base-line-height;
 
     // Gaps between nav items, but not on the last one
