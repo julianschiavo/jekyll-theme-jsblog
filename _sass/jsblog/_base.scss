@@ -216,7 +216,7 @@ pre {
   @extend %clearfix;
 
   @include media-query($on-medium) {
-    width: 692px;
+    width: 792px;
   }
 
   @include media-query($on-small) {
