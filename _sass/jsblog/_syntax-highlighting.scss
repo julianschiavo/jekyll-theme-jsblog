@@ -4,7 +4,7 @@
 .highlight {
   text-align: left;
   background-color: var(--grey-color-lighter);
-  @extend %vertical-rhythm;
+  // @extend %vertical-rhythm;
 
   .highlighter-rouge & {
     background-color: var(--grey-color-lighter);
