@@ -3,11 +3,11 @@
  */
 .highlight {
   text-align: left;
-  background-color: lighten($grey-color-light, 5%);
+  background-color: lighten(var(--grey-color-light), 5%);
   @extend %vertical-rhythm;
 
   .highlighter-rouge & {
-    background-color: lighten($grey-color-light, 5%);
+    background-color: lighten(var(--grey-color-light), 5%);
   }
 
   .c     { color: #998; font-style: italic } // Comment

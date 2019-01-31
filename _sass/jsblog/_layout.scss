@@ -22,7 +22,7 @@
 }
 
 .site-title {
-  color: $light-text-color !important;
+  color: var(--light-text-color) !important;
   font-size: 28px;
   font-weight: $heavy-font-weight;
   letter-spacing: -1px;
@@ -31,7 +31,7 @@
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: var(--grey-color-dark);
   }
 
   :hover {
@@ -50,7 +50,7 @@
   }
 
   .page-link {
-    color: $light-text-color;
+    color: var(--light-text-color);
     line-height: $base-line-height;
 
     // Gaps between nav items, but not on the last one
@@ -85,7 +85,7 @@
   padding: 20px 0;
   font-size: 15px;
   color: $grey-color;
-  background-color: $footer-background-color;
+  background-color: var(--footer-background-color);
   text-align: center;
 }
 
@@ -165,7 +165,7 @@
 .post-link {
   &,
   &:visited {
-    color: $text-color;
+    color: var(--text-color);
   }
 }
 
@@ -188,7 +188,7 @@
 //     &,
 //     &:visited {
 //       color: $grey-color;
-//       background-color: $grey-color-light;
+//       background-color: var(--grey-color-light);
 //     }
 //
 //     &:hover {
@@ -298,8 +298,8 @@
  */
 .pagination {
   padding: $spacing-unit / 2 0;
-  border-top: 1px solid $grey-color-light;
-  border-bottom: 1px solid $grey-color-light;
+  border-top: 1px solid var(--grey-color-light);
+  border-bottom: 1px solid var(--grey-color-light);
   text-align: center;
   @extend %clearfix;
 
