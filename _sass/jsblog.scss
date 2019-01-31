@@ -1,11 +1,18 @@
-// Define defaults for each variable.
+// Font Families
 $base-font-family: -apple-system-font, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 $monospace-font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !default;
 
+// Site Wide Variables
+$site-header-background-color: #191900 !default;
+$site-header-text-color: #ffffff !default;
+$site-header-text-color-visited: darken(#828282, 25%); // --grey-color-dark in light mode
+$site-title-font-size: 28px !default;
+$site-footer-font-size: 16px !default;
+
 // Font Sizes
-$title-large-font-size: 1px !default;
-$title-font-size: 42px !default;
+// $title-large-font-size: 1px !default;
+$title-font-size: 40px !default;
 $title-medium-font-size: 32px !default;
 $title-small-font-size: 27px !default;
 
@@ -38,12 +45,6 @@ $grey-color:        #828282 !default;
 $brand-color:       #2568ba !default;
 $a-color:           #0070c9 !default;
 $a-hover-opacity:   .65 !default;
-
-$site-header-background-color: #191900 !default;
-$site-header-text-color: #ffffff !default;
-$site-header-text-color-visited: darken(#828282, 25%); // --grey-color-dark in light mode
-$site-title-font-size: 30px !default;
-$site-footer-font-size: 15px !default;
 
 // Width of the content area
 $content-width:     980px !default;
