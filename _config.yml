@@ -31,12 +31,16 @@ exclude:
   - vendor
 
 # Social media
-twitter_username:
-twitter_image:
-facebook_app_id:
-facebook_image:
-google_analytics:
 comments: false
+
+# Footer links
+footer_links:
+  - title: Twitter
+    url: https://twitter.com/justjs_dev
+    icon: fab fa-twitter-square
+  - title: Feed
+    url: feed.xml
+    icon: fas fa-rss-square
 
 # Plugins
 plugins:
