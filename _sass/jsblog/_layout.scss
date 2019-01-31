@@ -4,7 +4,7 @@
 .site-header {
   height: 65px;
   line-height: 65px;
-  background-image: linear-gradient($site-header-background-color, $site-header-background-color, $site-header-background-color, var(--background-color));
+  background-image: $site-header-background-color);
   // background-image: // $site-header-background-color;
 
   -webkit-user-select: none;
