@@ -19,8 +19,8 @@ $a-color:           #0070c9 !default;
 $a-hover-opacity:   .65 !default;
 
 $header-background-color: #191900 !default;
-$header-text-color: #333333 !default;
-$header-text-color-visited: darken(#828282, 25%); // Use the $grey-color as base
+$header-text-color: #ffffff !default;
+$header-text-color-visited: darken(#828282, 25%); // --grey-color-dark in light mode
 
 // Width of the content area
 $content-width:     980px !default;
