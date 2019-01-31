@@ -1,9 +1,9 @@
-# whiteglass
+# jekyll-theme-jsblog
 
-[![Gem Version](https://badge.fury.io/rb/jekyll-whiteglass.svg)](https://badge.fury.io/rb/jekyll-whiteglass)
-[![Build Status](https://travis-ci.org/yous/whiteglass.svg?branch=master)](https://travis-ci.org/yous/whiteglass)
+//[![Gem Version](https://badge.fury.io/rb/jekyll-whiteglass.svg)](https://badge.fury.io/rb/jekyll-whiteglass)
+//[![Build Status](https://travis-ci.org/yous/whiteglass.svg?branch=master)](https://travis-ci.org/yous/whiteglass)
 
-Minimal, responsive Jekyll theme for hackers.
+Minimal, responsive theme used on my blog.
 
 ![whiteglass theme](screenshot.png)
 
@@ -12,13 +12,13 @@ Minimal, responsive Jekyll theme for hackers.
 Add this line to your Jekyll site's Gemfile:
 
 ``` ruby
-gem "jekyll-whiteglass"
+gem "jekyll-theme-jsblog"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ``` yaml
-theme: jekyll-whiteglass
+theme: jekyll-theme-jsblog
 ```
 
 And then execute:
@@ -30,7 +30,7 @@ bundle
 Or install it yourself as:
 
 ``` sh
-gem install jekyll-whiteglass
+gem install jekyll-theme-jsblog
 ```
 
 ## Quick Start
@@ -42,16 +42,16 @@ gem install jekyll-whiteglass
    cd blog
    ```
 
-2. Edit `Gemfile` to use whiteglass theme:
+2. Edit `Gemfile` to use the theme:
 
    ``` ruby
-   gem "jekyll-whiteglass"
+   gem "jekyll-theme-jsblog"
    ```
 
-3. Edit `_config.yml` to use whiteglass theme and its plugins:
+3. Edit `_config.yml` to use the theme and its plugins:
 
    ``` yaml
-   theme: jekyll-whiteglass
+   theme: jekyll-theme-jsblog
    plugins:
      - jekyll-archives
      - jekyll-paginate
@@ -72,17 +72,17 @@ gem install jekyll-whiteglass
    ```
 
 4. Copy
-   [`index.html`](https://github.com/yous/whiteglass/blob/master/index.html),
-   [`about.md`](https://github.com/yous/whiteglass/blob/master/about.md),
-   [`archives.md`](https://github.com/yous/whiteglass/blob/master/archives.md),
-   [`feed.xml`](https://github.com/yous/whiteglass/blob/master/feed.xml), and
-   [`_data/navigation.yml`](https://github.com/yous/whiteglass/blob/master/_data/navigation.yml)
+   [`index.html`](https://github.com/justjs/jekyll-theme-jsblog/blob/master/index.html),
+   [`about.md`](https://github.com/justjs/jekyll-theme-jsblog/blob/master/about.md),
+   [`archives.md`](https://github.com/justjs/jekyll-theme-jsblog/blob/master/archives.md),
+   [`feed.xml`](https://github.com/justjs/jekyll-theme-jsblog/blob/master/feed.xml), and
+   [`_data/navigation.yml`](https://github.com/justjs/jekyll-theme-jsblog/blob/master/_data/navigation.yml)
    from the theme:
 
    ``` sh
    rm index.md
-   curl -L -O "https://github.com/yous/whiteglass/raw/master/{index.html,about.md,archives.md,feed.xml}"
-   curl -L --create-dirs -o _data/navigation.yml https://github.com/yous/whiteglass/raw/master/_data/navigation.yml
+   curl -L -O "https://github.com/justjs/jekyll-theme-jsblog/raw/master/{index.html,about.md,archives.md,feed.xml}"
+   curl -L --create-dirs -o _data/navigation.yml https://github.com/justjs/jekyll-theme-jsblog/raw/master/_data/navigation.yml
    ```
 
 5. Install gems and you're good to go! The blog will be available on
@@ -115,12 +115,12 @@ environment variable `GITHUB_TOKEN` with the value of the token you generated.
 
 ### Customization
 
-To override the default structure and style of whiteglass, simply create the
+To override the default structure and style of this theme, simply create the
 concerned directory at the root of your site, copy the file you wish to
 customize to that directory, and then edit the file. e.g., to override the
 [`_includes/footer_content.html`](_includes/footer_content.html) file to add
 contents to footer, create an `_includes` directory, copy
-`_includes/footer_content.html` from jekyll-whiteglass gem folder to
+`_includes/footer_content.html` from jekyll-theme-jsblog gem folder to
 `<your-site>/_includes` and start editing that file.
 
 For example, you can add favicons to `_includes/head_custom.html`:
@@ -141,13 +141,13 @@ has to exist at your site source. Do either of the following:
 - Create a new instance of `main.scss` at site source
   - Create a new file `main.scss` at `<your-site>/assets/`
   - Add the frontmatter dashes, and
-  - Add `@import "whiteglass";`, to `<your-site>/assets/main.scss`
+  - Add `@import "theme-jsblog";`, to `<your-site>/assets/main.scss`
   - Add your custom CSS
 - Download the file from this repo
   - Create a new file `main.scss` at `<your-site>/assets/`
   - Copy the contents at [`assets/main.scss`](assets/main.scss) onto the `main.scss` you just created, and edit away
-- Copy directly from jekyll-whiteglass gem
-  - Go to your local jekyll-whiteglass gem installation directory (run `bundle show jekyll-whiteglass` to get the path to it)
+- Copy directly from jekyll-theme-jsblog gem
+  - Go to your local jekyll-theme-jsblog gem installation directory (run `bundle show jekyll-theme-jsblog` to get the path to it)
   - Copy the `assets/` folder from there into the root of `<your-site>`
   - Change whatever values you want, inside `<your-site>/assets/main.scss`
 
@@ -189,12 +189,12 @@ want to link to.
 
 ``` yaml
 layout: post
-title: Jekyll whiteglass theme
-external-url: https://github.com/yous/whiteglass
+title: Jekyll Theme
+external-url: https://github.com/justjs/jekyll-theme-jsblog
 ```
 
 Then the title of your post would look like a link with text
-`Jekyll whiteglass theme →`. This also applies to your blog feed.
+`Jekyll Theme →`. This also applies to your blog feed.
 
 ### Category
 
@@ -258,7 +258,7 @@ Then create `<your-site>/atom.xml` with the same content of `feed.xml` above.
 
 ### Comments
 
-whiteglass provides the ability to include your favourite commenting service, like [Disqus](https://disqus.com) or [Isso](https://posativ.org/isso).
+This theme provides the ability to include your favourite commenting service, like [Disqus](https://disqus.com) or [Isso](https://posativ.org/isso).
 
 To enable comments on pages and posts:
 1. Overwrite the `_includes/custom_comments_provider.html` with your custom provider of comments.
@@ -275,8 +275,8 @@ used in meta descriptions for improving SEO.
 
 ``` yaml
 layout: post
-title: How to configure jekyll-whiteglass
-keywords: jekyll, whiteglass, github pages
+title: How to configure jekyll-theme-jsblog
+keywords: jekyll, js, github pages
 ```
 
 YAML list is also available:
@@ -284,7 +284,7 @@ YAML list is also available:
 ``` yaml
 keywords:
   - jekyll
-  - whiteglass
+  - js
   - github pages
 ```
 
@@ -317,7 +317,7 @@ main:
   - title: "Archives"
     url: /archives/
   - title: "GitHub"
-    url: https://github.com/yous/whiteglass
+    url: https://github.com/justjs/jekyll-theme-jsblog
 ```
 
 ### Enabling Google Analytics
@@ -331,7 +331,7 @@ google_analytics: UA-NNNNNNNN-N
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at
-<https://github.com/yous/whiteglass>. This project is intended to be a safe,
+<https://github.com/justjs/jekyll-theme-jsblog>. This project is intended to be a safe,
 welcoming space for collaboration, and contributors are expected to adhere to
 the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
@@ -341,7 +341,7 @@ To set up your environment to develop this theme, run `bundle install`.
 
 Your theme is setup just like a normal Jekyll site! To test your theme, run
 `bundle exec jekyll serve` and open your browser at
-`http://localhost:4000/whiteglass/`. This starts a Jekyll server using your
+`http://localhost:4000/jsblog/`. This starts a Jekyll server using your
 theme. Add pages, documents, data, etc. like normal to test your theme's
 contents. As you make modifications to your theme and to your content, your site
 will regenerate and you should see the changes in the browser after a refresh,
