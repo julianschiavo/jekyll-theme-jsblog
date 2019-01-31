@@ -1,36 +1,47 @@
 // Define defaults for each variable.
+@media (prefers-color-scheme: dark) {
+  @import "jsblog/dark-mode"
+}
+
 $base-font-family: -apple-system-font, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $monospace-font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !default;
-$base-font-size:   17px !default;
-$base-font-weight: 400 !default;
-$heavy-font-weight: 500 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
-$nav-font-size: 16px !default;
-$base-line-height: 1.5 !default;
 
-$spacing-unit:     15px !default;
+$base-font-size:    17px !default;
+$base-font-weight:  400 !default;
+$heavy-font-weight: 500 !default;
+$small-font-size:   $base-font-size * 0.875 !default;
+$nav-font-size:     16px !default;
+$base-line-height:  1.5 !default;
+
+$spacing-unit:      15px !default;
 $page-content-padding: 80px !default;
 
-$text-color:       #333 !default;
-$light-text-color: #fff !default;
-$background-color: #fff !default;
+$text-color:        #333 !default;
+$light-text-color:  #fff !default;
+$background-color:  #fff !default;
 $dark-background-color: #111 !default;
 $footer-background-color: #f2f2f2 !default;
-$brand-color:      #2568ba !default;
-$a-color: #0070c9 !default;
+$brand-color:       #2568ba !default;
+$a-color:           #0070c9 !default;
 
-$grey-color:       #828282 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+$grey-color:        #828282 !default;
+$grey-color-light:  lighten($grey-color, 40%) !default;
+$grey-color-dark:   darken($grey-color, 25%) !default;
 
 // Width of the content area
-$content-width:    980px !default;
-$on-palm:          692px !default;
-$on-laptop:        980px !default;
-$on-medium:        1068px !default;
-$on-small:         735px !default;
+$content-width:     980px !default;
+$on-palm:           692px !default;
+$on-laptop:         980px !default;
+$on-medium:         1068px !default;
+$on-small:          735px !default;
 
-
+// Dark Mode
+$dm-text-color: #f2f2f2 !default;
+$dm-light-text-color: #000 !default;
+$dm-background-color: #2C2C2C !default;
+$dm-footer-background-color: #0D0D0D !default;
+$dm-grey-color-light: darken($grey-color, 25%) !default;
+$dm-grey-color-dark: lighten($grey-color, 40%) !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -44,6 +55,8 @@ $on-small:         735px !default;
     @content;
   }
 }
+
+
 
 
 
