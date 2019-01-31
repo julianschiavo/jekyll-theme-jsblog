@@ -99,7 +99,7 @@
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: var(--grey-color-dark);
   }
 }
 
