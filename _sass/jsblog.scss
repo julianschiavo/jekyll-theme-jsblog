@@ -59,6 +59,7 @@ $on-small:          735px !default;
   --dim-text-color: #ffffff;
   --background-color: #ffffff;
   --footer-background-color: #f2f2f2;
+  --footer-text-color: $grey-color;
   --grey-color-light: lighten(#828282, 40%); // Use the $grey-color as base
   --grey-color-lighter: lighten(#828282, 50%); // Use the $grey-color as base
   --grey-color-dark: darken(#828282, 25%); // Use the $grey-color as base
@@ -71,6 +72,7 @@ $on-small:          735px !default;
     --dim-text-color: #000000;
     --background-color: #2C2C2C;
     --footer-background-color: #414141;
+    --footer-text-color: lighten(#828282, 40%); // Use the $grey-color as base
     --grey-color-light: darken(#828282, 25%); // Use the $grey-color as base
     --grey-color-lighter: darken(#828282, 35%); // Use the $grey-color as base
     --grey-color-dark: lighten(#828282, 40%); // Use the $grey-color as base

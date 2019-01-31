@@ -82,7 +82,7 @@
   line-height: 20px;
   padding: 20px 0;
   font-size: $site-footer-font-size;
-  color: $grey-color;
+  color: --footer-text-color;
   background-color: var(--footer-background-color);
   text-align: center;
 }
