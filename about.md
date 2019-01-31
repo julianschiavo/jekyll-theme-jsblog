@@ -52,22 +52,12 @@ gem install jekyll-theme-jsblog
    ``` yaml
    theme: jekyll-theme-jsblog
    plugins:
-     - jekyll-archives
      - jekyll-paginate
      - jekyll-sitemap
 
    permalink: /:year/:month/:day/:title/
    paginate_path: /posts/:num/
    paginate: 5
-
-   jekyll-archives:
-     enabled:
-       - categories
-       - tags
-     layout: category_archives
-     permalinks:
-       category: /categories/:name/
-       tag: /tags/:name/
    ```
 
 4. Copy
@@ -195,26 +185,6 @@ external-url: https://github.com/justjs/jekyll-theme-jsblog
 Then the title of your post would look like a link with text
 `Jekyll Theme →`. This also applies to your blog feed.
 
-### Category
-
-Each post can have `categories` attribute. It can be a string or an array. This
-will be displayed on index, archive and each post, and provide a link to the
-archive of category.
-
-``` yaml
-layout: post
-title: Awesome Post
-categories: Misc
-```
-
-``` yaml
-layout: post
-title: Another Awesome Post
-categories:
-  - Misc
-  - Idea
-```
-
 ### Tag
 
 Each post can have `tags` attribute. It can be a string or an array. This will
@@ -313,8 +283,6 @@ To define header links, add titles and URLs under the `main` key in
 main:
   - title: "About"
     url: /about/
-  - title: "Archives"
-    url: /archives/
   - title: "GitHub"
     url: https://github.com/justjs/jekyll-theme-jsblog
 ```

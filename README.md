@@ -53,22 +53,12 @@ gem install jekyll-theme-jsblog
    ``` yaml
    theme: jekyll-theme-jsblog
    plugins:
-     - jekyll-archives
      - jekyll-paginate
      - jekyll-sitemap
 
    permalink: /:year/:month/:day/:title/
    paginate_path: /posts/:num/
    paginate: 5
-
-   jekyll-archives:
-     enabled:
-       - categories
-       - tags
-     layout: category_archives
-     permalinks:
-       category: /categories/:name/
-       tag: /tags/:name/
    ```
 
 4. Copy
@@ -314,8 +304,6 @@ To define header links, add titles and URLs under the `main` key in
 main:
   - title: "About"
     url: /about/
-  - title: "Archives"
-    url: /archives/
   - title: "GitHub"
     url: https://github.com/justjs/jekyll-theme-jsblog
 ```
