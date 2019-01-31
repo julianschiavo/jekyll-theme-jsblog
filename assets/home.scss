@@ -1,0 +1,10 @@
+---
+# This tells Jekyll to compile this page
+---
+
+@charset "utf-8";
+
+// Override some variables on the home page
+:root {
+  --content-width: 1080px;
+}

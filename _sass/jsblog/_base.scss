@@ -29,7 +29,7 @@ body {
           font-feature-settings: "kern" 1;
   font-kerning: normal;
   letter-spacing: -.022em;
-  margin-bottom: 60px;
+  margin-bottom: 110px; // 35 + Footer Height
   word-wrap: break-word;
 }
 
@@ -178,11 +178,11 @@ hr {
 /**
  * Code formatting
  */
+
 pre,
 code {
   font-family: $monospace-font-family;
   font-size: 13px;
-  background-color: var(--grey-color-lighter);
 }
 
 code {
@@ -191,11 +191,10 @@ code {
 }
 
 pre {
-  padding: 8px 12px;
+  padding: 20px 20px;
   overflow-x: auto;
   word-wrap: normal;
-  border: 1px solid var(--text-color);
-  border-radius: 5px;
+
 
   > code {
     // border: 0;
@@ -210,7 +209,7 @@ pre {
  * Wrapper
  */
 .wrapper {
-  width: $content-width;
+  width: var(--content-width);
   margin-right: auto;
   margin-left: auto;
   @extend %clearfix;
@@ -223,7 +222,6 @@ pre {
     width: 87.5%;
   }
 }
-
 
 
 /**

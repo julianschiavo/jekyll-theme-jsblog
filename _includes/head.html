@@ -18,6 +18,10 @@
   {% endif %}
 
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  {% if page.layout == 'home' %}
+    <link rel="stylesheet" href="{{ "/assets/home.css" | relative_url }}">
+  {% endif %}
+
   <link rel="canonical" href="{{ canonical }}">
   {% assign feed_path = "/feed.xml" %}
   {% if site.feed and site.feed.path %}

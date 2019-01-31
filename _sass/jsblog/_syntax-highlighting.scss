@@ -4,10 +4,12 @@
 .highlight {
   text-align: left;
   background-color: var(--grey-color-lighter);
+  border: 0 solid var(--text-color);
+  border-radius: 20px;
   // @extend %vertical-rhythm;
 
   .highlighter-rouge & {
-    background-color: var(--grey-color-lighter);
+    background-color: var(--grey-color-light);
   }
 
   .c     { color: #998; font-style: italic } // Comment

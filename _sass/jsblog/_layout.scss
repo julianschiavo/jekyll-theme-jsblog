@@ -17,6 +17,10 @@
 
   // Positioning context for the mobile navigation icon
   position: relative;
+
+  & > .wrapper {
+    width: var(--header-content-width);
+  }
 }
 
 .site-title {
