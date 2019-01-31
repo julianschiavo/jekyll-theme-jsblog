@@ -43,7 +43,7 @@ table {
  * Set `margin-bottom` to maintain vertical rhythm
  */
 h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
+p, blockquote,
 ul, ol, dl, figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
@@ -194,8 +194,8 @@ pre {
   padding: 8px 12px;
   overflow-x: auto;
   word-wrap: normal;
-  border: 1px solid var(--grey-color-light);
-  border-radius: 5;
+  border: 1px solid var(--test);
+  border-radius: 5px;
 
   > code {
     // border: 0;
