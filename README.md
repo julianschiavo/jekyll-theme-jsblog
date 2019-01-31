@@ -1,7 +1,7 @@
 # jekyll-theme-jsblog
 
-//[![Gem Version](https://badge.fury.io/rb/jekyll-whiteglass.svg)](https://badge.fury.io/rb/jekyll-whiteglass)
-//[![Build Status](https://travis-ci.org/yous/whiteglass.svg?branch=master)](https://travis-ci.org/yous/whiteglass)
+<!--[![Gem Version](https://badge.fury.io/rb/jekyll-theme-jsblog.svg)](https://badge.fury.io/rb/jekyll-theme-jsblog)
+[![Build Status](https://travis-ci.org/justjs/jekyll-theme-jsblog.svg?branch=master)](https://travis-ci.org/justjs/jekyll-theme-jsblog)-->
 
 Minimal, responsive theme used on my blog.
 
