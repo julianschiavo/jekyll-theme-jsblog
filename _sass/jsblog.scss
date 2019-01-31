@@ -1,7 +1,5 @@
 // Define defaults for each variable.
-@media (prefers-color-scheme: dark) {
-  @import "jsblog/dark-mode"
-}
+@import "jsblog/dark-mode"
 
 $base-font-family: -apple-system-font, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $monospace-font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !default;
@@ -60,7 +58,7 @@ $dm-grey-color-dark: lighten($grey-color, 40%) !default;
 }
 
 
-
+@include dark-mode;
 
 
 // Import partials.
