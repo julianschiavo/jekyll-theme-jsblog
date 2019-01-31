@@ -182,8 +182,7 @@ pre,
 code {
   font-family: $monospace-font-family;
   font-size: 13px;
-  // border: 1px solid var(--grey-color-light);
-  border: 3px solid #ffff00 !important;
+  border: 1px solid var(--grey-color-light);
   border-radius: 0;
   background-color: var(--grey-color-lighter);
 }
