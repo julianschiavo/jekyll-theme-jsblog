@@ -240,7 +240,6 @@
     letter-spacing: .004em;
   }
 
-
   @include media-query($on-small) {
     font-size: $title-small-font-size;
     line-height: 1.14815;
@@ -257,6 +256,14 @@
     line-height: 1.5;
     font-weight: 300;
     letter-spacing: .017em;
+
+    @include media-query($on-medium) {
+      font-size: $lead-small-font-size;
+    }
+
+    @include media-query($on-small) {
+      font-size: $lead-small-font-size;
+    }
   }
 
   // Headers
