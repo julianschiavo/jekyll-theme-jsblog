@@ -20,6 +20,14 @@
 
   & > .wrapper {
     width: var(--header-content-width);
+
+    @include media-query($on-medium) {
+      width: 792px;
+    }
+
+    @include media-query($on-small) {
+      width: 90%;
+    }
   }
 }
 

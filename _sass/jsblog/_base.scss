@@ -219,7 +219,7 @@ pre {
   }
 
   @include media-query($on-small) {
-    width: 87.5%;
+    width: 90%; // Original 87.5%
   }
 }
 
