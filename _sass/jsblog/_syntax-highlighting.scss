@@ -1,6 +1,14 @@
 /**
  * Syntax highlighting styles
  */
+
+.highlighter-rouge {
+  background-color: var(--grey-color-lighter);
+  border: 0 solid var(--text-color);
+  border-radius: 3px;
+  padding: 3px;
+}
+
 .highlight {
   text-align: left;
   background-color: var(--grey-color-lighter);

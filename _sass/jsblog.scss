@@ -4,7 +4,6 @@ $base-font-family: -apple-system-font, BlinkMacSystemFont, "San Francisco", "Hel
 $monospace-font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !default;
 
 // Site Wide Variables
-$site-header-background-color: #161616 !default;
 $site-header-text-color: #ffffff !default;
 $site-header-text-color-visited: darken(#828282, 25%); // --grey-color-dark in light mode
 $site-title-font-size: 28px !default;
@@ -66,8 +65,7 @@ $on-small: 735px !default;
   --text-color: #333333;
   --dim-text-color: #ffffff;
   --background-color: #ffffff;
-  --footer-background-color: #f2f2f2;
-  --footer-text-color: $grey-color;
+
   --grey-color-light: #{$grey-color-light};
   --grey-color-lighter: #{$grey-color-lighter};
   --grey-color-dark: #{$grey-color-dark};
@@ -75,6 +73,10 @@ $on-small: 735px !default;
 
   --content-width: 750px; // Original 980px
   --header-content-width: 1080px;
+
+  --header-background-color: #2C2C2C;
+  --footer-background-color: #f2f2f2;
+  --footer-text-color: ${$grey-color};
 }
 
 @media (prefers-color-scheme: dark) {
@@ -82,12 +84,15 @@ $on-small: 735px !default;
     --text-color: #f2f2f2;
     --dim-text-color: #000000;
     --background-color: #2C2C2C;
-    --footer-background-color: #414141;
-    --footer-text-color: lighten(#828282, 40%); // Use the $grey-color as base
+
     --grey-color-light: #{$dm-grey-color-light};
     --grey-color-lighter: #{$dm-grey-color-lighter};
     --grey-color-dark: #{$dm-grey-color-dark};
     --grey-color-darker: #{$dm-grey-color-darker};
+
+    --header-background-color: #161616;
+    --footer-background-color: #414141;
+    --footer-text-color: lighten(#828282, 40%); // Use the $grey-color as base
   }
 }
 
