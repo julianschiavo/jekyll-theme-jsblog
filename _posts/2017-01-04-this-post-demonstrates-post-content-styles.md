@@ -7,12 +7,18 @@ This paragraph is a lead paragraph! It's typography is automatically changed to 
 
 <!-- more -->
 
-## Using figures!
+# Using figures!
 
 <figure>
   <figcaption>Some beautiful caption.</figcaption>
   <img src="https://purr.objects-us-east-1.dream.io/i/party.jpg" alt="an amazing alt text" width="600px"/>
 </figure>
+
+```
+function thisHighlightHasNoSetLanguage() {
+  var x = y
+}
+```
 
 ## Some great heading (h2)
 

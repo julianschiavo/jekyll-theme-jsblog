@@ -130,16 +130,16 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $brand-color;
+  color: var(--link-color);
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 10%);
+    color: var(--link-visited-color);
   }
 
   &:hover {
     color: var(--text-color);
-    opacity: $a-hover-opacity;
+    opacity: $link-hover-opacity;
   }
 }
 

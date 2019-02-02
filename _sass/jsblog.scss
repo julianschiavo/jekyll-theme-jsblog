@@ -50,9 +50,7 @@ $dm-grey-color-lighter: darken(#828282, 30%); // Use the $grey-color as base
 $dm-grey-color-dark: lighten(#828282, 40%); // Use the $grey-color as base
 $dm-grey-color-darker: lighten(#828282, 45%); // Use the $grey-color as base
 
-$brand-color: #2568ba !default;
-$a-color: #0070c9 !default;
-$a-hover-opacity: .65 !default;
+$link-hover-opacity: .65 !default;
 
 // Width of the content area
 $on-palm: 692px !default;
@@ -62,6 +60,8 @@ $on-small: 735px !default;
 
 // Variables that change with dark mode
 :root {
+  --link-color: #0070c9;
+  --link-visited-color: #0059a0;
   --text-color: #333333;
   --dim-text-color: #ffffff;
   --background-color: #ffffff;
@@ -81,6 +81,8 @@ $on-small: 735px !default;
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --link-color: #328cd3;
+    --link-visited-color: #2870a8;
     --text-color: #f2f2f2;
     --dim-text-color: #000000;
     --background-color: #2C2C2C;

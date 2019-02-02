@@ -45,7 +45,7 @@
   }
 
   :hover {
-    opacity: $a-hover-opacity;
+    opacity: $link-hover-opacity;
     text-decoration: none;
   }
 }
@@ -55,7 +55,7 @@
   font-size: $nav-font-size;
 
   a:hover {
-    opacity: $a-hover-opacity;
+    opacity: $link-hover-opacity;
     text-decoration: none;
   }
 
@@ -181,7 +181,7 @@
 .post-continue {
   a {
     text-decoration: none;
-    color: $a-color;
+    color: var(--link-color);
 
     &:hover {
       text-decoration: underline;
@@ -202,7 +202,7 @@
 //
 //     &:hover {
 //       color: white;
-//       background-color: $brand-color;
+//       background-color: var(--link-color);
 //     }
 //   }
 // }
@@ -230,7 +230,7 @@
 .post-title {
   font-size: $title-font-size;
   line-height: 1.1;
-  font-weight: 600;
+  font-weight: 800;
   letter-spacing: 0em;
   margin-bottom: 0px;
 
@@ -251,20 +251,20 @@
   margin-bottom: $spacing-unit;
 
   // First paragraph is the lead
-  p:first-of-type {
-    font-size: $lead-font-size;
-    line-height: 1.5;
-    font-weight: 500;
-    letter-spacing: .017em;
-
-    @include media-query($on-medium) {
-      font-size: $lead-small-font-size;
-    }
-
-    @include media-query($on-small) {
-      font-size: $lead-small-font-size;
-    }
-  }
+  // p:first-of-type {
+  //   font-size: $lead-font-size;
+  //   line-height: 1.5;
+  //   font-weight: 500;
+  //   letter-spacing: .017em;
+  //
+  //   @include media-query($on-medium) {
+  //     font-size: $lead-small-font-size;
+  //   }
+  //
+  //   @include media-query($on-small) {
+  //     font-size: $lead-small-font-size;
+  //   }
+  // }
 
   // Headers
 
