@@ -8,13 +8,20 @@ layout: default
 
   {% capture site_lang %}{{ site.lang | default: "en" }}{% endcapture %}
 
-  <ul class="post-list">
+  <div class="post-list">
     {% for post in paginator.posts %}
       {% capture post_lang %}{{ post.lang | default: site_lang }}{% endcapture %}
       {% capture lang %}{% if post_lang != site_lang %}{{ post_lang }}{% endif %}{% endcapture %}
 
-      <li{% if lang != empty %} lang="{{ lang }}"{% endif %}>
+      <article{% if lang != empty %} lang="{{ lang }}"{% endif %}>
         <header class="post-header">
+          <p class="post-meta">
+            {{ post.date | date: "%b %-d, %Y" }}
+            {% if post.external-url %}
+              • <a href="{{ post.url | relative_url }}">Permalink</a>
+            {% endif %}
+          </p>
+
           <h1 class="post-title">
             {% if post.external-url %}
               <a class="post-link" href="{{ post.external-url }}">{{ post.title | escape }} &rarr;</a>
@@ -22,13 +29,6 @@ layout: default
               <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
             {% endif %}
           </h1>
-
-          <p class="post-meta">
-            {{ post.date | date: "%b %-d, %Y" }}
-            {% if post.external-url %}
-              • <a href="{{ post.url | relative_url }}">Permalink</a>
-            {% endif %}
-          </p>
         </header>
 
         <div class="post-content">
@@ -39,9 +39,9 @@ layout: default
             <a href="{{ post.url | relative_url }}">Read on &rarr;</a>
           </p>
         {% endif %}
-      </li>
+      </article>
     {% endfor %}
-  </ul>
+  </div>
 
   {% include pagination.html %}
 

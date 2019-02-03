@@ -8,7 +8,17 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
 
 /**
  * Basic styling
@@ -210,6 +220,7 @@ pre {
  */
 .wrapper {
   width: var(--content-width);
+  max-width: 95%;
   margin-right: auto;
   margin-left: auto;
   @extend %clearfix;

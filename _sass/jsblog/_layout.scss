@@ -113,7 +113,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 75px;
+  // height: 80px;
   line-height: 18px;
   padding: 10px 0;
   font-size: $site-footer-font-size;
@@ -156,19 +156,33 @@
 }
 
 .post-list {
-  margin-left: 0;
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
 
   .post-link:hover {
     text-decoration: none;
   }
 
-  > li {
-    padding-bottom: 0;
+  > article {
+    float: left;
+    width: 30%;
+    margin-bottom: 50px;
 
-    &:not(:first-child) {
-      padding-top: 50px;
+    @include media-query($on-small) {
+      width: 100%;
     }
+  }
+
+  .post-title {
+    font-size: $title-medium-font-size;
+    line-height: 1.125;
+    letter-spacing: .004em;
+  }
+
+  .post-content > p {
+    font-size: $small-font-size;
   }
 }
 
@@ -191,6 +205,10 @@
     font-size: $meta-small-font-size;
     line-height: 1.21053;
     letter-spacing: .012em;
+  }
+
+  & + .post-title {
+    margin-top: .4em;
   }
 }
 

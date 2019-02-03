@@ -13,14 +13,14 @@ $site-footer-font-size: 16px !default;
 // Font Sizes
 // $title-large-font-size: 1px !default;
 $title-font-size: 42px !default;
-$title-medium-font-size: 32px !default;
+$title-medium-font-size: 34px !default;
 $title-small-font-size: 27px !default;
 
 $subtitle-font-size: 24px !default;
 $subtitle-small-font-size: 22px !default;
 
-$meta-font-size: 21px !default;
-$meta-small-font-size: 19px !default;
+$meta-font-size: 18px !default;
+$meta-small-font-size: 16px !default;
 
 $lead-font-size: 21px !default;
 $lead-small-font-size: 19px !default;
@@ -73,7 +73,7 @@ $on-small: 735px !default;
   --grey-color-darker: #{$grey-color-darker};
 
   --content-width: 750px; // Original 980px
-  --header-content-width: 1080px;
+  --header-content-width: 1180px;
 
   --header-background-color: #2C2C2C;
   --footer-background-color: #f2f2f2;

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "This post demonstrates post content styles"
+title: "Post Content Styles"
 ---
 
 This paragraph is a lead paragraph! It's typography is automatically changed to add more emphasis on whatever you chose to use this for. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu.
