@@ -34,11 +34,11 @@ layout: default
         <div class="post-content">
           {{ post.excerpt }}
         </div>
-        {% if post.content contains site.excerpt_separator %}
+        <!-- {% if post.content contains site.excerpt_separator %}
           <p class="post-continue">
             <a href="{{ post.url | relative_url }}">Read on &rarr;</a>
           </p>
-        {% endif %}
+        {% endif %} -->
       </article>
     {% endfor %}
   </div>
