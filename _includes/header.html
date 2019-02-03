@@ -2,7 +2,13 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <div class="site-header-container">
+      <div class="site-header-text">
+        <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+        <br>
+        <p class="site-description">{{ site.description | escape }}</p>
+      </div>
+    </div>
 
     <nav class="site-nav">
       {% for link in site.data.navigation.main %}

@@ -6,7 +6,8 @@ $monospace-font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Co
 // Site Wide Variables
 $site-header-text-color: #ffffff !default;
 $site-header-text-color-visited: darken(#828282, 25%); // --grey-color-dark in light mode
-$site-title-font-size: 28px !default;
+$site-title-font-size: 32px !default;
+$site-title-small-font-size: 25px !default;
 $site-footer-font-size: 16px !default;
 
 // Font Sizes
@@ -27,8 +28,8 @@ $lead-small-font-size: 19px !default;
 $base-font-size: 17px !default;
 $caption-font-size: 17px !default;
 $blockquote-font-size: 18px !default;
-$small-font-size:   $base-font-size * 0.875 !default;
-$nav-font-size:     16px !default;
+$small-font-size: $base-font-size * 0.875 !default;
+$nav-font-size: 16px !default;
 
 // Font Variables
 $base-font-weight: 400 !default;
