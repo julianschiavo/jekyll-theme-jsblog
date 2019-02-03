@@ -40,21 +40,16 @@
 }
 
 .site-header-text {
+  color: $site-header-text-color;
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
 }
 
 .site-title {
-  color: $site-header-text-color !important;
   font-size: $site-title-font-size;
   font-weight: $heavy-font-weight;
   letter-spacing: -1px;
-
-  &,
-  &:visited {
-    color: $site-header-text-color-visited;
-  }
 
   :hover {
     opacity: $link-hover-opacity;
