@@ -326,7 +326,7 @@
   h1 {
     font-size: $title-font-size;
     line-height: 1.09375;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: .011em;
 
     @include media-query($on-medium) {
@@ -339,7 +339,7 @@
   h2 {
     font-size: $subtitle-font-size;
     line-height: 1.20849;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: .015em;
 
     @include media-query($on-medium) {
