@@ -45,6 +45,7 @@ footer_links:
 # Plugins
 plugins:
   - jekyll-paginate
+  - jekyll-feed
   - jekyll-sitemap
 
 # Build settings
