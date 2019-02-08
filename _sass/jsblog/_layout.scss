@@ -161,6 +161,12 @@
   justify-content: space-between;
   align-items: stretch;
 
+  &:after {
+    display: block;
+    width: 30%;
+    content: "";
+  }
+
   .post-link:hover {
     text-decoration: none;
   }
