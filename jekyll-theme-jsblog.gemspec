@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-jsblog"
-  spec.version       = "1.0.34"
+  spec.version       = "1.0.36"
   spec.authors       = ["Julian Schiavo"]
   spec.email         = ["justdotjs@icloud.com"]
 

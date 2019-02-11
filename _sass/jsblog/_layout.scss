@@ -167,10 +167,6 @@
     content: "";
   }
 
-  .post-link:hover {
-    text-decoration: none;
-  }
-
   > article {
     float: left;
     width: 30%;
@@ -189,6 +185,10 @@
 
   .post-content > p {
     font-size: $small-font-size;
+  }
+
+  .post-link:hover {
+    text-decoration: none;
   }
 }
 
