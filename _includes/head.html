@@ -17,13 +17,13 @@
     <meta name="keywords" content="{{ keywords }}">
   {% endif %}
 
+  {% if site.codefund.property %}
+    <script src="https://codefund.app/properties/{{ site.codefund.property }}/funder.js?theme={{ site.codefund.theme | default: light }}&template={{ site.codefund.template | default: default }}"></script>
+  {% endif %}
+
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {% if page.layout == 'home' %}
     <link rel="stylesheet" href="{{ "/assets/home.css" | relative_url }}">
-  {% endif %}
-
-  {% if site.codefund.property %}
-  <script src="https://codefund.app/properties/{{ site.codefund.property }}/funder.js?theme={{ site.codefund.theme | default: light }}&template={{ site.codefund.template | default: default }}" async="async"></script>
   {% endif %}
 
   <link rel="canonical" href="{{ canonical }}">
