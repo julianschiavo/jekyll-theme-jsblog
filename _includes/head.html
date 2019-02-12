@@ -22,6 +22,10 @@
     <link rel="stylesheet" href="{{ "/assets/home.css" | relative_url }}">
   {% endif %}
 
+  {% if site.codefund.property %}
+  <script src="https://codefund.app/properties/{{ site.codefund.property }}/funder.js?theme={{ site.codefund.theme | default: light }}&template={{ site.codefund.template | default: default }}" async="async"></script>
+  {% endif %}
+
   <link rel="canonical" href="{{ canonical }}">
   {% assign feed_path = "/feed.xml" %}
   {% if site.feed and site.feed.path %}

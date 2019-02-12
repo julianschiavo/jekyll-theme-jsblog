@@ -144,14 +144,14 @@
  * Page content
  */
 .page-content {
-  padding-top: 50px;
+  padding-top: 20px;
 
   @include media-query($on-medium) {
-    padding-top: 40px;
+    padding-top: 10px;
   }
 
   @include media-query($on-small) {
-    padding-top: 30px
+    padding-top: 10px
   }
 }
 
@@ -394,4 +394,46 @@
   .next {
     float: right;
   }
+}
+
+/**
+ * Codefund Ads
+ */
+
+:root {
+  --ad-background-color: #ededed;
+  --ad-text-color: #777777;
+  --ad-strong-text-color: #212121;
+  --ad-powered-by-color: #909090;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ad-background-color: rgba(0, 0, 0, 0.3);
+    --ad-text-color: rgba(255, 255, 255, 0.8);
+    --ad-strong-text-color: #fafafa;
+    --ad-powered-by-color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+#codefund {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.cf-wrapper {
+  background-color: var(--ad-background-color) !important;
+  border-radius: 10px;
+}
+
+.cf-text {
+  color: var(--ad-text-color) !important;
+
+  strong {
+    color: var(--ad-strong-text-color) !important;
+  }
+}
+
+.cf-powered-by {
+  color: var(--ad-powered-by-color) !important;
 }

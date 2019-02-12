@@ -33,6 +33,11 @@ exclude:
 # Social media
 comments: false
 
+codefund:
+  property: 000
+  theme: light
+  template: horizontal
+
 # Footer links
 footer_links:
   - title: Twitter
