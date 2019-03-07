@@ -16,12 +16,15 @@ layout: default
   </header>
 
   {% include ad.html %}
+  {% include newsletter_signup_small.html %}
 
   <hr>
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
+
+  {% include newsletter_signup.html %}
 
   {% if site.comments == true and page.comments != false %}
     <div class="post-comments" itemprop="comment">
