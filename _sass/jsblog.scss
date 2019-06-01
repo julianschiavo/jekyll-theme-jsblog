@@ -72,7 +72,7 @@ $on-small: 735px !default;
   --grey-color-dark: #{$grey-color-dark};
   --grey-color-darker: #{$grey-color-darker};
 
-  --content-width: 750px; // Original 980px
+  --content-width: 820px; // Original 980px
   --header-content-width: 1180px;
 
   --header-background-color: #2C2C2C;
@@ -83,10 +83,10 @@ $on-small: 735px !default;
 @media (prefers-color-scheme: dark) {
   :root {
     --link-color: #328cd3;
-    --link-visited-color: #2870a8;
-    --text-color: #f2f2f2;
+    --link-visited-color: #2c7ab7;
+    --text-color: #d7d7d8;
     --dim-text-color: #000000;
-    --background-color: #2C2C2C;
+    --background-color: #1e1d1e;
 
     --grey-color-light: #{$dm-grey-color-light};
     --grey-color-lighter: #{$dm-grey-color-lighter};
@@ -94,7 +94,7 @@ $on-small: 735px !default;
     --grey-color-darker: #{$dm-grey-color-darker};
 
     --header-background-color: #161616;
-    --footer-background-color: #414141;
+    --footer-background-color: #333333;
     --footer-text-color: lighten(#828282, 40%); // Use the $grey-color as base
   }
 }
