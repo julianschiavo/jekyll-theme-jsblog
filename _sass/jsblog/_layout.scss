@@ -358,14 +358,14 @@
   // TODO: Revise h3
   h3 {
     font-size: $lead-font-size;
-    line-height: 1.15667;
+    line-height: 1.22739;
     font-weight: 500;
-    letter-spacing: .016em;
+    letter-spacing: .014em;
 
     @include media-query($on-medium) {
       font-size: $lead-small-font-size;
       line-height: 1.18182;
-      letter-spacing: .02em;
+      letter-spacing: .015em;
     }
   }
 }
