@@ -291,7 +291,7 @@
 .post-title {
   font-size: $title-font-size;
   line-height: 1.1;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: 0em;
   margin-bottom: 0px;
 
@@ -332,7 +332,7 @@
   h1 {
     font-size: $title-font-size;
     line-height: 1.09375;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: .011em;
 
     @include media-query($on-medium) {
@@ -345,7 +345,7 @@
   h2 {
     font-size: $subtitle-font-size;
     line-height: 1.20849;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: .015em;
 
     @include media-query($on-medium) {
@@ -359,7 +359,7 @@
   h3 {
     font-size: $lead-font-size;
     line-height: 1.22739;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: .014em;
 
     @include media-query($on-medium) {
