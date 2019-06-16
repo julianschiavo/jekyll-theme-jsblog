@@ -15,7 +15,7 @@ layout: default
     {% for post in paginator.posts %}
       {% capture post_lang %}{{ post.lang | default: site_lang }}{% endcapture %}
       {% capture lang %}{% if post_lang != site_lang %}{{ post_lang }}{% endif %}{% endcapture %}
-      {% assign excerpt=post.excerpt | replace: '<!-- Notice -->', '<!--' | replace: '<!-- End Notice -->', '-->' %}
+      {% assign excerpt=post.excerpt | replace: '<!-- Notice -->', '<!--' | replace: '<!-- End Notice -->', '-->' | replace: '<!-- Hidden -->', '<!--' | replace: '<!-- End Hidden -->', '-->' %}
 
       <article{% if lang != empty %} lang="{{ lang }}"{% endif %}>
         <header class="post-header">
